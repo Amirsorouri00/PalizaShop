@@ -1,0 +1,386 @@
+/*------------------------------------------------------------------
+[RESPONSIVE CSS]
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+/*1. Large Layout: 1900px. */
+/*2. Medium Layout: 1280px. */
+	/*2.1 Header*/
+	/*2.2 About*/
+	/*2.3 Blog*/
+/*3. Tablet Layout: 768px. */
+	/*3.1 Header*/
+	/*3.2 About*/
+	/*3.3 Video*/
+	/*3.4 Features*/
+	/*3.5 Screenshot*/
+	/*3.6 Blog */
+	/*3.7 Pricing*/
+	/*3.8 Download*/
+/*4. Mobile Layout: 300px. */
+	/*4.1 Header*/
+	/*4.2 Slider*/
+	/*4.3 About*/
+	/*4.4 Video*/
+	/*4.5 Features*/
+	/*4.6 Sereenshot*/
+	/*4.7 Testimonials*/
+	/*4.8 Blog*/
+	/*4.9 Pricing*/
+	/*4.10 Blog*/
+	/*4.11 Subcribe*/
+	/*4.12 Download*/
+	/*4.13 Contact*/
+	/*4.14 Footer*/
+/*5. Wide Mobile Layout: 450px. */
+	/*5.1 Header*/
+	/*5.2 About*/
+	/*5.3 Video*/
+	/*5.4 Screenshot*/
+	/*5.5 Blog*/
+	/*5.6 Subcribe*/
+/*-----------------------------------------------------------------*/
+/*1. Large Layout: 1900px. */
+@media only screen and (min-width: 1282px) and (max-width: 1900px) {
+}
+/*2. Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+/*2.1 Header*/
+.slicknav_menu {
+  display:none;
+}
+#nav a {
+  font-size: 13px;
+  margin: 5px;
+}
+/*2.2 About*/
+.about_icon {
+  margin-bottom: 75px;
+}
+/*2.3 Blog*/
+.blog_img img {
+  width: 100%;
+}
+.blog_img {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+}
+.blog_text {
+  padding: 10px;
+}
+}
+/*3. Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*3.1 Header*/
+#nav,.slicknav_menu .slicknav_menutxt,.slicknav_item a i  {
+  display:none;
+}
+.slicknav_menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: block;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  width: 70%;
+  z-index: 999999 !important;
+}
+.slicknav_btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin: 0;
+}
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #79E853;
+  height: 3px;
+  width: 42px;
+}
+.slicknav_nav {
+  background: #fff none repeat scroll 0 0;
+  margin: 41px 0 0;
+}
+.slicknav_nav a {
+  color: #777777;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 15px;
+}
+.slicknav_nav a:hover{
+  color: #fff;
+  background:#79E853;
+  border-radius:0;
+}
+.slicknav_nav .slicknav_row:hover{
+  color: #fff;
+  background:#79E853;
+  border-radius:0;
+}
+.logo {
+  max-width: 105px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-top: 8px;
+}
+/*3.2 About*/
+.section_padding {
+  padding: 30px 0;
+}
+.about.section_padding {
+  padding-bottom: 0;
+}
+#right_img_1{display:none;}
+#right_img_2 {
+  display: block;
+  margin-bottom: 50px;
+}
+/*3.3 Video*/
+.video {
+  height: 450px;
+  padding-top: 0;
+}
+/*3.4 Features*/
+.amazing_text {
+  margin-bottom: 35px;
+}
+.about_icon {
+  margin-bottom: 70px;
+}
+/*3.5 Screenshot*/
+.service.section_padding {
+  padding-bottom: 50px;
+}
+/*3.6 Blog*/
+.single_blog {
+  padding: 20px 0;
+}
+.blog_img {
+  float: none;
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+}
+/*3.7 Pricing*/
+#pricing-table .plan {
+  margin: 15px 0;
+}
+/*3.8 Download*/
+.download.section_padding {
+  padding-bottom: 40px;
+}
+}
+/*4. Mobile Layout: 300px. */
+@media only screen and (max-width: 767px) {
+.container{width:300px;}
+/*4.1 Header*/
+#nav,.slicknav_menu .slicknav_menutxt,.slicknav_item a i  {
+  display:none;
+}
+.slicknav_menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: block;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  width: 70%;
+  z-index: 999999 !important;
+}
+.slicknav_btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin: 0;
+}
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #79E853;
+  height: 3px;
+  width: 42px;
+}
+.slicknav_nav {
+  background: #fff none repeat scroll 0 0;
+  margin: 41px 0 0;
+}
+.slicknav_nav a {
+  color: #777777;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 15px;
+}
+.slicknav_nav a:hover{
+  color: #fff;
+  background:#79E853;
+  border-radius:0;
+}
+.slicknav_nav .slicknav_row:hover{
+  color: #fff;
+  background:#79E853;
+  border-radius:0;
+}
+.logo {
+  max-width: 105px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-top: 8px;
+}
+/*4.2 Slider*/
+.carousel-indicators {
+  bottom: 5%;
+}
+.fawesome-control {
+  display: none;
+}
+/*4.3 About*/
+.section_padding {
+  padding: 20px 0;
+}
+.section-title h1 {
+  padding: 0 0 20px;
+}
+.amazing_title h1::after {
+  right: 50%;
+  bottom:-16%;
+}
+.about_title.section-title h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+.section-title p {
+  padding-bottom: 0;
+}
+.about_text {
+  margin-bottom: 30px;
+}
+.about.section_padding {
+  padding-bottom: 0;
+}
+/*4.4 Video*/
+.video {
+  height: 250px;
+  padding-top: 0;
+}
+.amazing_title::after, .amazing_title::before {
+  bottom: -2px;
+  left: 24%;
+}
+.amazing_title::before {
+  bottom: -2px;
+  left: 54%;
+}
+#polina {
+  left: 30%;
+}
+/*4.5 Features*/
+.about_right.amazing_text {
+  margin-bottom: 30px;
+}
+/*4.6 Sereenshot*/
+.service.section_padding {
+  padding-bottom: 50px;
+}
+.owl-item .item > img {
+  padding: 5px;
+}
+.customNavigation {
+  left: 37%;
+}
+/*4.7 Testimonials*/
+.testimonials {
+  padding: 25px 0;
+}
+.testimonials_indicators {
+  bottom: 0%;
+}
+.testimonials p ,.social_icon,.about_hello{
+  margin-bottom: 30px;
+}
+.testimonials h4 {
+  font-size: 9px;
+  margin-bottom: 35px;
+}
+.single_testimonials {
+  padding-top: 55%;
+}
+/*4.8 Blog*/
+.blog_text {
+  margin-bottom: 0;
+}
+/*4.9 Pricing*/
+#pricing-table .plan{
+  margin-bottom: 15px;
+}
+/*4.10 Blog*/
+.blog_img img {
+  width: 100%;
+}
+.blog_img {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+}
+.blog_text {
+  padding: 10px;
+}
+/*4.11 Subcribe*/
+.subcribe_title {
+  margin-bottom: 40px;
+}
+.subcribe_text {
+  margin-bottom: 10px;
+}
+/*4.12 Download*/
+#about_p_text,.download_text a {
+  padding-right: 0;
+}
+.download_text > a {
+  padding: 6px;
+  margin-bottom: 10px;
+  display: block;
+}
+/*4.13 Contact*/
+.social_icon.text-center > a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/*4.14 Footer*/
+.footer_copyright p {
+  text-align: center;
+}
+}
+/*5. Wide Mobile Layout: 450px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container{width:450px;}
+/*5.1 Header*/
+.slicknav_menu {
+  display:block;
+}
+/*5.2 About*/
+.about_text {
+  margin-bottom: 50px;
+}
+/*5.3 Video*/
+.video {
+  height: 350px;
+}
+.amazing_title::before {
+  left: 59%;
+}
+#polina {
+  left: 41%;
+}
+/*5.4 Screenshot*/
+.customNavigation {
+  left: 44%;
+}
+.single_testimonials {
+  padding-top: 25%;
+}
+/*5.5 Blog*/
+.blog_img {
+  margin-right: 15px;
+  width: 43%;
+  float: left;
+}
+.blog_text {
+  padding: 20px 20px 40px;
+}
+/*5.6 Subcribe*/
+.subcribe_text > input {
+  margin-bottom: 10px;
+}
+}

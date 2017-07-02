@@ -1,0 +1,716 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: TURNER One page Multipurpose HTML5 Template
+Template URI: http://devitems.com
+Description: This is One page template
+Author: Rakib
+Author URI:https://www.facebook.com/rakibhossain82
+Version: 1.0
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+[1. body ]
+	[2. Header ]
+		[ 2.1 Logo ]
+		[ 2.1 Mainmenu ]
+	[2. Slider ]
+		[ 2.1 Slider-Text ]
+		[ 2.2 Fawesome-Control ]
+	[3. About ]
+		[ 3.1 About-Text ]
+	[4. Features ]
+	[5. Screenshot ]
+	[6. Video ]
+	[7. Testimonials ]
+		[7.1 Testimonials_Text ]
+		[7.2 Testimonials_indicators ]
+	[ 8. Blog ]
+		[8.1 Blog-Text ]
+	[9. Pricing ]
+		[9.1 Pricing-Text ]
+		[9.2 Pricing-signup ]
+	[10. Subcribe ]
+	[11. Download ]
+	[12. Contact ]
+	[13. Footer ]
+	/*ScrollUp*/
+/*-------------------------------------------------------------------*/
+.alignleft {
+  float:left;
+  margin-right:15px;
+  margin-bottom: 15px;
+}
+.alignright {
+  float:right;
+  margin-left:15px;
+  margin-bottom: 15px;
+}
+.aligncenter {
+  display:block;
+  margin:0 auto 15px;
+}
+a:focus {
+  outline:0px solid;
+  color:#ffd400;
+}
+.nav li a:focus, .nav li a:hover {
+  background-color: transparent;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+.fix {
+  overflow:hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+h3 {
+  font-size: 18px;
+}
+p{
+	font-size:13px;
+	color:#999;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+  transition: all 300ms ease-out 0s;
+  text-transform: uppercase;
+}
+*{
+  transition: all 300ms ease-out 0s;}
+a:hover{
+  text-decoration:none;
+  color:#fff;
+}
+.section_padding {
+  padding: 90px 0;
+}
+.section-title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.section-title {
+  margin-bottom:40px;
+}
+.section-title h1 {
+  padding-bottom: 15px;
+}
+.section-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+/*------------------------------------------------------------------
+[1. body ]
+--------------------------------------------------------------------*/
+.main_{display:block;transition:all 0.9s ease 0s;-moz-transition:all 0.9s ease 0s;-webkit-transition:all 0.9s ease 0s;-o-transition:all 0.9s ease 0s;}
+body {
+	background: #fff;
+	color: #626262;
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+    position:relative;
+}
+/*------------------------------------------------------------------
+[2. Header ]
+--------------------------------------------------------------------*/
+.sticky-wrapper {
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+/*-------------------
+[ 2.1 Logo ]
+---------------------*/
+.logo {
+  float: left;
+  max-width: 109px;
+  padding-top: 35px;
+}
+.logo img {
+  max-width: 80%;
+}
+#logo_1{
+  display:block;
+}
+#logo_2 {
+  display:none;
+}
+/*-------------------
+[ 2.1 Mainmenu ]
+---------------------*/
+.slicknav_menu {
+	display:none;
+}
+#nav {
+  float: right;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+#nav li {
+  float: left;
+  padding: 15px 0;
+}
+#nav a {
+  color: #ffffff;
+  font-size: 14px;
+  margin:8px;
+  padding: 13px 0;
+  transition: none;
+}
+#nav   a::before, #nav   a::after {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+}
+#nav  a::before {
+  content: "<";
+  margin-right: 10px;
+  transform: translateX(-20px);
+}
+#nav  a::after{
+  content: ">";
+  margin-left: 10px;
+  transform: translateX(20px);
+}
+#nav a:hover::before, #nav a:hover::after, #nav a:focus::before, #nav a:focus::after,#nav li.active a::before ,#nav li.active a::after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.nav.nav-tabs {
+  border-bottom: 0 none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background:none;
+  border-width: 0;
+}
+.nav-tabs > li > a {
+  border: 0 none;
+  border-radius: 0;
+}
+#nav a:hover{
+  background:none;
+}
+/*jquery-sticky-menu*/
+.is-sticky header {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0px 5px 0 #333333;
+}
+.is-sticky #nav a{
+  color:#000000;
+}
+.is-sticky #logo_1{
+  display:none;
+}
+.is-sticky #logo_2 {
+  display:block;
+}
+
+/*------------------------------------------------------------------
+[3. About ]
+--------------------------------------------------------------------*/
+.about {
+  padding-bottom: 30px;
+}
+.about_text {
+  margin-bottom: 60px;
+}
+.about_text a h3{
+  font-size:18px;
+  color:#444444;
+}
+.about_text a h3:hover {
+  color: #000000;
+}
+.about_title.section-title h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*-------------------
+[ 3.1 About-Text ]
+---------------------*/
+.about_text p {
+  line-height: 22px;
+  margin: 20px 0;
+}
+.about_icon {
+  border: 1px solid #ffd400;
+  float: left;
+  height: 60px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  transform: rotate(45deg);
+  width: 60px;
+  transition: all 300ms ease-out 0s;
+  background:#ffd400;
+}
+.about_icon i {
+  color: #ffffff;
+  font-size: 25px;
+  padding: 30%;
+  transform: rotate(-45deg);
+  z-index:5;
+}
+.about_text:hover .about_icon{
+  background:#ffffff;
+  border: 1px solid #ffd400;
+}
+.about_text:hover .about_icon i{
+	color:#ffd400;
+}
+#right_img_2{display:none;}
+/*------------------------------------------------------------------
+[4. Features ]
+--------------------------------------------------------------------*/
+.col-text-center{
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.amazing_title {
+  position: relative;
+}
+.amazing_title::after,.amazing_title::before  {
+  background: #ffd400 none repeat scroll 0 0;
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 31%;
+  position: absolute;
+  width: 15%;
+}
+.amazing_title::before {
+  bottom: -4px;
+  left: 52%;
+}
+.amazing_title h1 {
+  position: relative;
+  padding-bottom:30px;
+}
+.amazing_title h1::after {
+  border: 2px solid #ffd400;
+  bottom: -22%;
+  content: "";
+  height: 20px;
+  position: absolute;
+  right: 50%;
+  transform: rotate(45deg);
+  width: 20px;
+}
+.amazing_title:hover.amazing_title h1::after{
+	background:#ffd400;
+}
+/*------------------------------------------------------------------
+[5. Screenshot ]
+--------------------------------------------------------------------*/
+.service.section_padding {
+  background: #ffd400 none repeat scroll 0 0;
+}
+.screenshot_title h1::after{border:2px solid #fff;}
+.screenshot_title:hover.screenshot_title h1::after{
+	background:#fff;
+}
+.screenshot_title::after,.screenshot_title::before  {
+  background: #fff none repeat scroll 0 0;
+}
+.owl-item .item > img {
+  padding: 0 30px;
+}
+.customNavigation {
+  left: 47.6%;
+  position: absolute;
+}
+.btn.prev, .btn.next {
+  font-size: 30px;
+}
+/*------------------------------------------------------------------
+[6. Video ]
+--------------------------------------------------------------------*/
+.video.section_padding::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.video {
+  height: 520px;
+  overflow: hidden;
+  padding-top: 0;
+  position: relative;
+}
+#bgvid {
+  min-width: 100%;
+  position: relative;
+  z-index: -100;
+}
+.video_text .amazing_title {
+  color: #fff;
+  left: 0;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  z-index: 2;
+}
+#polina {
+  border: 3px solid #ffd400;
+  border-radius: 5px;
+  left: 45%;
+  margin: 2rem;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+#polina button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 3px;
+  color: #ffd400;
+  cursor: pointer;
+  display: block;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+#polina button i {
+  font-size: 25px;
+}
+/*------------------------------------------------------------------
+[7. Testimonials ]
+--------------------------------------------------------------------*/
+.testimonials::after {
+  background: #676767 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.testimonials {
+  background: rgba(0, 0, 0, 0) url("images/client/client-bg.jpg") no-repeat center center / cover ;
+  padding: 65px 0;
+  position: relative;
+}
+.carousel-inner{
+  z-index: 2;
+}
+/*-------------------
+[7.1 Testimonials_Text ]
+-------------------*/
+.single_testimonials{
+  padding-top: 20%;
+}
+.testimonials p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  color:#fff;
+}
+.testimonials h4 {
+  color: #fff;
+  font-family: "Oswald",sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+/*-------------------
+[7.2 Testimonials_indicators ]
+-------------------*/
+.testimonials_indicators {
+  opacity: 0.8;
+  top: 0;
+  width: 100%;
+  left: 30%;
+}
+.testimonials_indicators li {
+  border: medium none;
+  border-radius: 0;
+  margin: 0 -2px;
+  opacity: 0.5;
+  text-indent: inherit;
+  width: 80px;
+}
+.testimonials_indicators li.active {
+  opacity: 9;
+  margin: 0 -2px;
+}
+.testimonials_indicators .active {
+  width: 80px;
+  background:transparent;
+}
+/*------------------------------------------------------------------
+[ 8. Blog ]
+--------------------------------------------------------------------*/
+.single_blog {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+.single_blog:hover {
+  background: #dfdfdf none repeat scroll 0 0;
+}
+.blog_img {
+  float: left;
+  margin-right: 10px;
+  width: 50%;
+}
+.blog_text {
+  padding: 20px 20px 0;
+  text-align: left;
+}
+/*-------------------
+[8.1 Blog-Text ]
+---------------------*/
+.blog_text span {
+  color: #777;
+  font-size: 12px;
+}
+.blog_text p {
+  padding: 5px 0 0;
+  margin-bottom: 1px;
+}
+.blog_img img:hover {
+  opacity: 0.8;
+}
+.blog_text {
+  padding: 15px 40px 45px;
+}
+.blog_text p a {
+  color: #46ac2b;
+}
+/*------------------------------------------------------------------
+[9. Pricing ]
+--------------------------------------------------------------------*/
+.pricing::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.pricing {
+  background: rgba(0, 0, 0, 0) url("images/pricing-bg.jpg") no-repeat scroll center center / cover ;
+  position: relative;
+  width: 100%;
+}
+/*-------------------
+[9.1 Pricing-Text ]
+---------------------*/
+#pricing-table {
+  position: relative;
+  z-index: 1;
+}
+#pricing-table .plan {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #333;
+  opacity: 0.7;
+  padding: 20px;
+}
+#pricing-table h3 {
+  background: #ffd400 none repeat scroll 0 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  margin: -20px -20px 50px;
+  padding: 25px;
+}
+#pricing-table h3 span {
+  background: #ffd400 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  font: bold 25px/63px Georgia,serif;
+  height: 65px;
+  margin: 25px auto -65px;
+  width: 80px;
+}
+#pricing-table ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+#pricing-table li {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+/*-------------------
+[9.2 Pricing-signup ]
+---------------------*/
+#pricing-table .signup {
+  background:#ffd400;
+  border-radius: 3px;
+  display: inline-block;
+  font: bold 14px Arial,Helvetica;
+  margin: 20px 0 0;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+#pricing-table .signup:hover {
+  background:#d0ae07;
+}
+/*------------------------------------------------------------------
+[10. Subcribe ]
+--------------------------------------------------------------------*/
+.subcribe.section_padding {
+  background: #fff none repeat scroll 0 0;
+}
+.subcribe_title{
+  margin-bottom:80px;
+}
+.subcribe_text > input {
+  background: #f0f0f0 none repeat scroll 0 0;
+  border: 1px solid #ffd400;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+}
+.all_veiw a, .btn-black {
+  border: 1px solid #ffd400;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+}
+.all_veiw a:hover,.btn-black:hover{
+  background:#ffd400;
+  color:#fff;
+}
+/*------------------------------------------------------------------
+[11. Download ]
+--------------------------------------------------------------------*/
+.download.section_padding::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.download.section_padding {
+  background:rgba(0, 0, 0, 0) url("images/download-bg.jpg") no-repeat center center / cover ;
+  position: relative;
+}
+.download .container {
+  position: relative;
+  z-index: 1;
+}
+.download .subcribe_title h1, .screenshot_title h1{color:#FFF;}
+.download_text > a {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.download_text a i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+.download_text > a:hover {
+  background: #ffd400 none repeat scroll 0 0;
+}
+/*------------------------------------------------------------------
+[12. Contact ]
+--------------------------------------------------------------------*/
+.about_hello > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about_hello > p {
+  font-size: 13px;
+  padding-right: 20px;
+  line-height: 24px;
+  color: #777;
+}
+#about_p_text {
+  padding-right: 50px;
+}
+.about_hello p i {
+  font-size: 26px;
+  margin-right: 8px;
+  color:#ffd400;
+}
+#envel {
+  font-size: 16px;
+}
+.quick_contack.about_hello {
+  padding-right: 40px;
+}
+.quick_contack input ,.message_text textarea{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ffd400;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.social_icon a {
+  border: 1px solid #ffd400;
+  border-radius: 5px;
+  color: #ffd400;
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+.social_icon a:hover {
+  background: #ffd400 none repeat scroll 0 0;
+  color:#fff;
+}
+/*------------------------------------------------------------------
+[13. Footer ]
+--------------------------------------------------------------------*/
+footer {
+  background: #ffd400 none repeat scroll 0 0;
+  padding: 30px 0;
+}
+.footer_copyright p {
+  margin: 0;
+  color: #fff;
+}
+/*ScrollUp*/
+#scrollUp {
+  background-color: #ffd400;
+  border-radius: 2px;
+  padding: 5px 8px;
+  right: 45px;
+  text-align: center;
+  text-decoration: none;
+  top: 84%;
+}
+#scrollUp:hover{
+  opacity:.6;
+}
+.scrollToTop i {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 6px;
+}
+/*--------------------------------------------------------
+---------------------------[End ]-----------------------
+---------------------------------------------------------*/

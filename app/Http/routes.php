@@ -32,6 +32,27 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/task', 'TaskController@store');
     Route::delete('/task/{task}', 'TaskController@destroy');
 
+    /* Shop */
+    Route::get('shop/nav', function(){
+      return view('tasks/navbarList');
+    });
+
+    Route::get('shop/main', function(){
+      return view('mainPage/main');
+    });
+
+    Route::get('shop/goods', function(){
+      return view('goods/goods');
+    });
+
+    Route::get('shop/register', function(){
+      return view('auth/myRegister');
+    });
+
+    Route::get('shop/good', function(){
+      return view('goods/good');
+    });
+
     Route::auth();
 
 });
